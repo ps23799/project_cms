@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block title %} feedback{% endblock title %} {% block body %}
+<div class="container my-3" style="width:50%; margin-left:25%; ">
+    <h2>Feedback</h2>
+    <form action="" method="">
+        <div class="mb-3" >
+            <label for="title" class="form-label">Courier id</label>
+            <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp">
+        </div>
+         <div class="mb-3">
+            <label for="title" class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="title" id="title" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Message</label>
+             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            
+
+        </div>
+
+        <button type="submit" class="btn btn-dark">send feedback</button>
+    </form>
+</div>
+{% endblock body %}
